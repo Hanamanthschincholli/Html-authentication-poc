@@ -1,67 +1,124 @@
-Internship Training - HTML Forms Assignment
+# User Authentication UI (HTML + Bootstrap 5)
 
-Description:
-This project contains multiple HTML pages that simulate a basic authentication flow including Login, Register, Forgot Password, Reset Password, and Dashboard pages. All pages are connected using HTML redirection.
+This project is a simple **User Authentication Interface** built using **HTML, CSS, and Bootstrap 5**.  
+It contains multiple pages that simulate a basic login system with navigation between pages.
 
-Project Structure:
+## Technologies Used
+- HTML5
+- CSS3
+- Bootstrap 5
+- Bootstrap Icons
 
-internship-training-cp-html/
-|
-|-- login-form.html
-|-- register-form.html
-|-- forgot-form.html
-|-- reset-form.html
-|-- dashboard.html
-|-- README.txt
+---
 
-Page Flow:
+# Project Pages
 
-1. Login Page
-- Enter Username
-- Enter Password
-- Click Login → Redirects to Dashboard page
-- Click Forgot Password → Redirects to Forgot Password page
-- Click Create New Account → Redirects to Register page
+## 1. Login Page
+The login page allows existing users to access the system.
 
-2. Register Page
-- Enter Name
-- Enter Email ID
-- Enter Phone Number
-- Enter Password
-- Enter Confirm Password
-- Click Register → Redirects to Login page
-- Click Already have an account → Redirects to Login page
+### Features
+- Email input field
+- Password input field
+- Show/Hide password using Bootstrap icons
+- Login button
+- Link to **Register Page**
+- Link to **Forgot Password Page**
 
-3. Forgot Password Page
-- Enter Email
-- Click Send Reset Password Link → Redirects to Login page
+### Navigation
+- Login → Dashboard
+- Forgot Password → Forgot Password Page
+- Create Account → Register Page
 
-4. Reset Password Page
-- Enter New Password
-- Enter Confirm Password
-- Click Update Password → Redirects to Login page
+---
 
-5. Dashboard Page
-- Displays Welcome to Dashboard Page
-- Click Logout → Redirects to Login page
+## 2. Register Page
+The register page allows new users to create an account.
 
-Technologies Used:
-- HTML
+### Features
+- Name input
+- Email input
+- Phone number input
+- Password field
+- Confirm password field
+- Show/Hide password option
+- Register button
+- Link to Login page
 
-How to Run:
+### Navigation
+- Register → Login Page
+
+---
+
+## 3. Forgot Password Page
+This page allows users to request a password reset.
+
+### Features
+- Email input field
+- Send reset password link button
+
+### Navigation
+- Submit → Login Page
+
+---
+
+## 4. Reset Password Page
+This page allows users to create a new password.
+
+### Features
+- New password input
+- Confirm password input
+- Update password button
+
+### Navigation
+- Update Password → Login Page
+
+---
+
+## 5. Dashboard Page
+The dashboard page is displayed after successful login.
+
+### Features
+- Welcome message
+- Logout button
+
+### Navigation
+- Logout → Login Page
+
+---
+
+# Project Navigation Flow
+Login Page
+↓
+Dashboard Page
+↓
+Logout → Login Page
+
+Login Page → Register Page
+Register Page → Login Page
+
+Login Page → Forgot Password Page
+Forgot Password Page → Login Page
+
+Reset Password Page → Login Page
+
+
+# project-folder
+project-folder
+│
+├── Index(login-form).html
+├── register-form.html
+├── forgot-form.html
+├── reset-form.html
+├── dashboard.html
+├── style.css
+└── README.md
+
+# How to Run:
+
 1. Open the project folder
-2. Open login-form.html in any web browser
+2. Open Index(login-form).html in any web browser
 3. Navigate between pages using buttons and links
 
-Author:
-Name: Hanamanthschincholli
+# Author
+Name: Hanamanthschincholli 
 Email: hanamanthschincholli@gmail.com
-
-Assignment Status:
-- Login Page Created
-- Register Page Created
-- Forgot Password Page Created
-- Reset Password Page Created
-- Dashboard Page Created
-- Git Branch Created
-- Ready for Pull Request

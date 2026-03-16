@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reset Password</title>
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-    <center>
-        <h2>Reset Password</h2>     
-        <form action="login-form.html">
-            <label>New Password:</label><br>
-            <input type="text" required><br><br>
-
-            <label>Confirm Password:</label><br>
-            <input type="text" required><br><br>
-            <input type="submit" value="Update Password">
+    <center>   
+        <div>
+            <form action="Index(login-form).html">
+            <h2>Reset Password</h2>   
+            <input type="email" class="form-control" placeholder="Enter Your Email Address" required><br>
+            <input type="password" placeholder="Enter strong password" required><br><br>
+                    <input type="password" id="password" name="password" class="form-control"
+                        placeholder="Confirm Your Password" required minlength="8"
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&]).{8,}">
+                    <p>
+                       Password must contain:<br>
+                        • At least 8 characters<br>
+                        • One uppercase letter<br>
+                        • One lowercase letter<br>
+                        • One number at least<br>
+                        • One special character (@$!%*?&)"<br>
+                    </p>   
+            <input type="submit" value="Update Password" class="btn btn-primary">
+            <a href="forgot-form.html">Back to Forgot Password</a>
         </form>
+        </div>
     </center> 
 </body>
 </html>
